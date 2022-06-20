@@ -1,0 +1,54 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+   background: linear-gradient(-45deg, #ee7752, #e73c7e, #d5ba23, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  overflow:scroll; 
+}
+
+main {
+  min-height: 100vh;
+}
+
+.register-link {
+  color: #520dc2;
+}
+
+.logo-img {
+  width: 40px;
+}
+
+.topper {
+  margin-top: 150px;
+}
+
+.login-top {
+  margin-top: -40%;
+}
+
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media(max-width: 500px) {
+  .topper {
+    margin-top: 50px;
+  }
+}
